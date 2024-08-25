@@ -17,7 +17,7 @@ const aclonica = Aclonica({
 
 export const HoverImageLinks = () => {
 	return (
-		<div className="mx-[10%] max-w-[90%] border-t-2 border-neutral-700">
+		<div className="mx-[10%] max-w-[90%] h-fit border-t-2 border-neutral-700">
 			<Link
 				heading="Home"
 				subheading="01/"
