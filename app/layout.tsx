@@ -40,7 +40,7 @@ export default function RootLayout({
 							<div className="flex-1">
 								<FramerMagnetic className={""}>
 									<Image
-										src={"/logo.svg"}
+										src={"logo.svg"}
 										alt={"logo"}
 										width={56}
 										height={56}
@@ -56,7 +56,7 @@ export default function RootLayout({
 								>
 									<FramerMagnetic className={""}>
 										<Image
-											src={"/menu.svg"}
+											src={"menu.svg"}
 											alt={"menu"}
 											width={42}
 											height={42}

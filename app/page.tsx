@@ -23,7 +23,7 @@ export default function Home() {
 					className="uppercase text-[58px] sm:text-[80px] md:text-[86px] lg:text-[100px] font-dahlia w-[90%] lg:w-[50%]"
 				/>
 				<Image
-					src={"/hero-img.svg"}
+					src={"hero-img.svg"}
 					alt={""}
 					width={600}
 					height={100}
