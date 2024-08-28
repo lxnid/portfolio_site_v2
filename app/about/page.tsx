@@ -85,7 +85,7 @@ export default function About() {
 				>
 					<FramerMagnetic>
 						<Image
-							src={"/profile-img.jpg"}
+							src={"profile-img.jpg"}
 							alt={""}
 							width={1}
 							height={1}
@@ -94,7 +94,7 @@ export default function About() {
 						/>
 					</FramerMagnetic>
 					<Image
-						src={"/profile-img.jpg"}
+						src={"profile-img.jpg"}
 						alt={""}
 						width={1}
 						height={1}
@@ -211,7 +211,7 @@ export default function About() {
 								<div className="overflow-hidden rounded-[6rem] cursor-pointer hover:scale-105 transition ease-out duration-300">
 									<Link href={""}>
 										<Image
-											src={"/spotify-badge.jpg"}
+											src={"spotify-badge.jpg"}
 											width={1000}
 											height={1000}
 											alt={""}
