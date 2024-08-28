@@ -3,8 +3,9 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import Image from "next/image";
 import "@/app/style.css";
-import Navbar from "./components/Navbar";
-import FramerMagnetic from "@/app/components/ui/framerMagnetic";
+import Navbar from "./components/Navbar/Navbar";
+import FramerMagnetic from "@/app/components/util/framerMagnetic";
+import { TransitionLink } from "./components/util/TransitionLink";
 
 const fontPop = Poppins({
 	subsets: ["latin"],
@@ -34,17 +35,21 @@ export default function RootLayout({
 						className="drawer-toggle"
 					/>
 
-					<div className="drawer-content pt-20">
-						<nav className="navbar p-4 sm:px-8 fixed top-0 bg-gradient-to-b from-black z-50">
+					<div className="drawer-content">
+						<nav className="navbar p-4 sm:px-8 fixed top-0 bg-gradient-to-b from-black z-50 h-40 items-start">
 							{/* Left side: Logo */}
 							<div className="flex-1">
 								<FramerMagnetic className={""}>
+								<TransitionLink className={""} href={"/"}>
 									<Image
 										src={"logo.svg"}
 										alt={"logo"}
 										width={56}
 										height={56}
-									/>
+										className="h-auto"
+										priority={true}
+										/>
+										</TransitionLink>
 								</FramerMagnetic>
 							</div>
 
@@ -52,7 +57,7 @@ export default function RootLayout({
 							<div className="flex-none">
 								<label
 									htmlFor="my-drawer-4"
-									className="drawer-button btn"
+									className="drawer-button"
 								>
 									<FramerMagnetic className={""}>
 										<Image
@@ -60,6 +65,8 @@ export default function RootLayout({
 											alt={"menu"}
 											width={42}
 											height={42}
+											className="h-auto w-auto"
+											priority={true}
 										/>
 									</FramerMagnetic>
 								</label>

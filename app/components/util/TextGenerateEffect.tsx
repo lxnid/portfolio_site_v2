@@ -6,11 +6,13 @@ import { cn } from "@/lib/utils";
 export const TextGenerateEffect = ({
 	words,
 	className,
+	delay,
 	filter = true,
 	duration = 0.5,
 }: {
 	words: string;
 	className?: string;
+	delay?: number;
 	filter?: boolean;
 	duration?: number;
 }) => {
@@ -38,7 +40,11 @@ export const TextGenerateEffect = ({
 						<motion.span
 							initial={{ y: 48, opacity: 0 }}
 							whileInView={{ y: 0, opacity: 0.99 }}
-							transition={{ ease: "easeInOut", duration: 1 }}
+							transition={{
+								ease: "easeInOut",
+								duration: 1,
+								delay: delay,
+							}}
 							key={word + idx}
 							className="dark:text-white text-black opacity-0"
 							style={{
@@ -54,9 +60,9 @@ export const TextGenerateEffect = ({
 	};
 
 	return (
-		<div className={cn( className)}>
+		<div className={cn(className)}>
 			<div className="mt-4">
-				<div className=" dark:text-white text-black leading-none tracking-widest">
+				<div className=" dark:text-white text-black leading-none">
 					{renderWords()}
 				</div>
 			</div>

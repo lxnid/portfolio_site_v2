@@ -48,10 +48,8 @@ export default function FramerMagnetic({ children, className }: FramerMagneticPr
       onMouseLeave={reset}
       animate={{ x, y }}
       transition={{
-        type: "spring",
-        stiffness: 500,
-        damping: 60,
-        mass: 1,
+        duration: 0.1, // Adjust the duration as needed
+        ease: "linear", // Use easeIn, easeOut, easeInOut, or linear based on your needs
       }}
     >
       {children}
