@@ -36,7 +36,7 @@ export default function RootLayout({
 					/>
 
 					<div className="drawer-content">
-						<nav className="navbar p-4 sm:px-8 fixed top-0 bg-gradient-to-b from-black z-50 h-40 items-start">
+						<nav className="navbar p-4 sm:px-8 fixed top-0 bg-gradient-to-b z-50 h-40 items-start">
 							{/* Left side: Logo */}
 							<div className="flex-1">
 								<FramerMagnetic className={""}>
