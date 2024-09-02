@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'dahlia';
+  src: url('/fonts/dahlia-medium.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
 	margin: 0;
 	padding: 0;

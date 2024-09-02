@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import LinkAnimate from "../components/util/LinkAnimate";
 import { Alumni_Sans, Poppins } from "next/font/google";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa6";
 import FramerMagnetic from "../components/util/framerMagnetic";
@@ -32,15 +33,11 @@ interface SectionStyles {
 
 // Define section styles
 const sectionStyles: SectionStyles = {
-	sec1: {
+	secBgBlack: {
 		backgroundColor: "#000000",
 		textColor: "#ffffff",
 	},
-	sec2: {
-		backgroundColor: "#000000",
-		textColor: "#ffffff",
-	},
-	sec3: {
+	secBgWhite: {
 		backgroundColor: "#ffffff",
 		textColor: "#000000",
 	},
@@ -82,12 +79,12 @@ export default function About() {
 		<motion.div
 			style={{ backgroundColor, color: textColor }}
 			className="w-full h-full min-h-screen"
-			transition={{ duration: 1, ease: "easeInOut" }}
+			transition={{ duration: 1.5, ease: "easeInOut" }}
 		>
 			<main className="w-full">
 				<FixedBackground color={backgroundColor} />
 				<section
-					id="sec1"
+					id="secBgBlack"
 					className="w-full min-h-[100vh] h-auto flex flex-col-reverse lg:flex-row py-24 lg:py-0 justify-center items-center gap-10"
 				>
 					<motion.div
@@ -169,7 +166,7 @@ export default function About() {
 					</motion.div>
 				</section>
 				<section
-					id="sec2"
+					id="secBgBlack"
 					className="w-full min-h-screen h-fit lg:h-screen flex justify-center items-center p-[8%]"
 				>
 					<div className="w-auto h-auto gap-32 lg:gap-4 px-0 sm:px-16 lg:px-0">
@@ -293,7 +290,7 @@ export default function About() {
 					</div>
 				</section>
 				<section
-					id="sec3"
+					id="secBgWhite"
 					className="w-full min-h-screen flex justify-center items-center"
 				>
 					<div className="w-full flex flex-col justify-center items-center gap-40 sm:gap-0">
@@ -322,7 +319,7 @@ export default function About() {
 							</FramerMagnetic>
 						</motion.div>
 					</div>
-					<div className="absolute w-[86%] md:w-[70%] lg:w-[60%] space-y-5 md:text-xl lg:text-3xl font-medium text-justify">
+					<div className="absolute w-[86%] md:w-[70%] lg:w-[60%] space-y-5 md:text-xl lg:text-2xl opacity-70 font-normal text-justify">
 						<motion.p
 							initial={{ opacity: 0 }}
 							whileInView={{ opacity: 0.99 }}
@@ -359,6 +356,133 @@ export default function About() {
 							software engineering and further my understanding in
 							a rigorous and innovative environment.
 						</motion.p>
+					</div>
+				</section>
+				<section
+					id="secBgWhite"
+					className="w-full min-h-screen flex justify-center items-center my-36 sm:my-0"
+				>
+					<div className="w-full flex flex-col justify-center items-center gap-40 sm:gap-0">
+						<motion.div
+							initial={{ x: -48, opacity: 0 }}
+							whileInView={{ x: 0, opacity: 0.99 }}
+							transition={{ ease: "easeInOut", duration: 1 }}
+							className="w-[96%] md:w-[80%] lg:w-[70%] uppercase font-dahlia text-[145px] sm:text-[250px] text-center lg:text-end h-full overflow-hidden z-0"
+						>
+							<FramerMagnetic className={undefined}>
+								<h1 className="opacity-20 transition duration-200 ease-in">
+									My
+								</h1>
+							</FramerMagnetic>
+						</motion.div>
+						<motion.div
+							initial={{ x: 48, opacity: 0 }}
+							whileInView={{ x: 0, opacity: 0.99 }}
+							transition={{ ease: "easeInOut", duration: 1.2 }}
+							className="w-[96%] md:w-[80%] lg:w-[70%] uppercase font-dahlia text-[145px] sm:text-[250px] h-full text-start overflow-hidden z-0"
+						>
+							<FramerMagnetic className={undefined}>
+								<h1 className="opacity-20 transition duration-200 ease-in">
+									Skills
+								</h1>
+							</FramerMagnetic>
+						</motion.div>
+					</div>
+					<div className="absolute w-[86%] md:w-[70%] lg:w-[60%] sm:space-x-5 md:text-xl lg:text-2xl opacity-70 font-normal text-justify sm:flex">
+						<div className="sm:w-[50%]">
+							<LinkAnimate
+								heading="Javascript"
+								subheading=""
+								imgSrc="https://img.icons8.com/color/240/javascript.png"
+								classNameHead=""
+								classNameSub=""
+								AnimDelay={0.2}
+								classNameImgSize={"h-20 w-20"}
+							/>
+							<LinkAnimate
+								heading="HTML / CSS"
+								subheading=""
+								imgSrc="https://img.icons8.com/ios-filled/240/html-5.png"
+								classNameHead=""
+								classNameSub=""
+								AnimDelay={0.2}
+								classNameImgSize={"h-20 w-20"}
+							/>
+							<LinkAnimate
+								heading="Python"
+								subheading=""
+								imgSrc="https://img.icons8.com/color/240/python.png"
+								classNameHead=""
+								classNameSub=""
+								AnimDelay={0.2}
+								classNameImgSize={"h-20 w-20"}
+							/>
+							<LinkAnimate
+								heading="Next-JS"
+								subheading=""
+								imgSrc="https://img.icons8.com/color/240/nextjs.png"
+								classNameHead=""
+								classNameSub=""
+								AnimDelay={0.2}
+								classNameImgSize={"h-20 w-20"}
+							/>
+							<LinkAnimate
+								heading="React-JS"
+								subheading=""
+								imgSrc="https://img.icons8.com/color/240/react-native.png"
+								classNameHead=""
+								classNameSub=""
+								AnimDelay={0.2}
+								classNameImgSize={"h-20 w-20"}
+							/>
+						</div>
+						<div className="sm:w-[50%]">
+							<LinkAnimate
+								heading="Tailwind-CSS"
+								subheading=""
+								imgSrc="https://img.icons8.com/fluency/240/tailwind_css.png"
+								classNameHead=""
+								classNameSub=""
+								AnimDelay={0.2}
+								classNameImgSize={"h-20 w-20"}
+							/>
+							<LinkAnimate
+								heading="Github"
+								subheading=""
+								imgSrc="https://img.icons8.com/color/240/github.png"
+								classNameHead=""
+								classNameSub=""
+								AnimDelay={0.2}
+								classNameImgSize={"h-20 w-20"}
+							/>
+							<LinkAnimate
+								heading="Linux"
+								subheading=""
+								imgSrc="https://img.icons8.com/color/240/linux.png"
+								classNameHead=""
+								classNameSub=""
+								AnimDelay={0.2}
+								classNameImgSize={"h-20 w-20"}
+							/>
+							<LinkAnimate
+								heading="Figma"
+								subheading=""
+								imgSrc="https://img.icons8.com/color/240/figma.png"
+								classNameHead=""
+								classNameSub=""
+								AnimDelay={0.2}
+								classNameImgSize={"h-20 w-20"}
+							/>
+							<LinkAnimate
+								heading="Adobe CC"
+								subheading=""
+								imgSrc="https://img.icons8.com/fluency/240/adobe-creative-cloud.png"
+								classNameHead=""
+								classNameSub=""
+								AnimDelay={0.2}
+								classNameImgSize={"h-20 w-20"}
+							/>
+						</div>
 					</div>
 				</section>
 			</main>

@@ -7,7 +7,7 @@ import { HoverImageLinks } from "./HoverImageLinks";
 
 const Navbar = () => {
 	return (
-		<div className="absolute menu bg-none text-base-content h-screen overflow-hidden min-h-[90vh] pt-36 md:pt-16 w-full p-4 backdrop-blur-3xl">
+		<div className="absolute menu bg-none text-base-content h-screen overflow-hidden min-h-[90vh] pt-36 w-full p-4 backdrop-blur-3xl">
 			<HoverImageLinks />
 			<div className="mx-[1%] sm:mx-[10%] mt-[2%] bottom-40 md:bottom-auto absolute md:relative md:h-16 flex justify-center items-center">
 				<motion.div
