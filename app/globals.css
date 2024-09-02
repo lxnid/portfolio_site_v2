@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: 'dahlia';
-  src: url('/fonts/dahlia-medium.otf') format('opentype');
+  src: url('../public/fonts/dahlia-medium.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
