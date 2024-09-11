@@ -28,6 +28,7 @@ export default function RootLayout({
 	return (
 		<html lang="en" className="bg-black">
 			<body className={`${fontPop.className} `}>
+				<div className="w-full flex justify-center items-center h-10 fixed top-10 bg-slate-500">STILL UNDER CONSTRUCTION. DON'T MIND THE DETAILS</div>
 				<div className="drawer drawer-end overflow-hidden">
 					<input
 						id="my-drawer-4"
