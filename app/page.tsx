@@ -14,15 +14,31 @@ const fontParisienne = Parisienne({
 
 export default function Home() {
 	return (
-		<main className="w-full">
-			<section className="sm:pt-0 w-full flex justify-center items-center min-h-[100vh]">
+		<main className="w-full snap-y snap-mandatory h-screen overflow-y-scroll">
+			<section className="sm:pt-0 w-full flex justify-center items-center min-h-[100vh] snap-start relative">
+				<motion.video
+					initial={{ opacity: 0 }}
+					whileInView={{ opacity: 0.5 }}
+					transition={{ ease: "easeInOut", duration: 1 }}
+					autoPlay
+					loop
+					muted
+					playsInline
+					className="video absolute top-0 left-0 z-0 blur-lg opacity-45 w-screen"
+				>
+					<source
+						src="https://cdn.dribbble.com/users/32512/screenshots/17066462/media/a1b8991f197da384b56f9b17c7a47c51.mp4"
+						type="video/mp4"
+					/>
+					Your browser does not support the video tag.
+				</motion.video>{" "}
 				<TextGenerateEffect
 					words={
 						"©’24DINIL RUBASINGHE COMPUTER SCIENCE STUDENT CREATIVE DESIGNER & HOBBYIST"
 					}
-					className="uppercase text-[58px] sm:text-[80px] md:text-[86px] lg:text-[100px] font-dahlia w-[90%] lg:w-[50%]"
+					className="uppercase text-[58px] sm:text-[80px] md:text-[86px] lg:text-[100px] font-dahlia w-[90%] lg:w-[80%]"
 				/>
-				<motion.span
+				{/* <motion.span
 					initial={{ x: 48, opacity: 0 }}
 					whileInView={{ x: 0, opacity: 0.99 }}
 					transition={{ ease: "easeInOut", duration: 2, delay: 0.2 }}
@@ -32,12 +48,13 @@ export default function Home() {
 						alt={""}
 						width={600}
 						height={100}
-						className="hidden lg:block w-auto"
+						className="hidden lg:block w-auto opacity-0"
 						priority={true}
 					/>
-				</motion.span>
+				</motion.span> */}
 			</section>
-			<section className="max-w-screen h-screen">
+			<section className="snap-start relative max-w-screen h-screen bg-transparent">
+				<div className="w-full h-80 bg-gradient-to-t from-black absolute"></div>
 				<div className="absolute w-full min-h-[96vh] flex flex-col justify-center items-center gap-40 sm:gap-0">
 					<motion.div
 						initial={{ x: -48, opacity: 0 }}
@@ -48,7 +65,8 @@ export default function Home() {
 						<FramerMagnetic className={undefined}>
 							<TransitionLink
 								href={"/about"}
-								className="opacity-20 hover:opacity-30 transition duration-200 ease-in"
+								// className="opacity-20 hover:opacity-30 transition duration-200 ease-in"
+								className="text-[rgb(53,53,53)] hover:text-[rgb(80,80,80)] transition duration-200 ease-in"
 							>
 								About
 							</TransitionLink>
@@ -63,7 +81,7 @@ export default function Home() {
 						<FramerMagnetic className={undefined}>
 							<TransitionLink
 								href={""}
-								className="opacity-20 hover:opacity-30 transition duration-200 ease-in"
+								className="text-[rgb(53,53,53)] hover:text-[rgb(80,80,80)] transition duration-200 ease-in"
 							>
 								Work
 							</TransitionLink>

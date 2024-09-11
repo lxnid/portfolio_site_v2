@@ -67,7 +67,7 @@ const LinkAnimate: React.FC<LinkProps> = ({ heading, imgSrc, subheading, href, A
 				duration: 0.75,
 				delay: AnimDelay,
 			}}
-			className="group relative flex items-center justify-between border-b-2 border-neutral-700 py-4 transition-colors duration-500 hover:border-neutral-300"
+			className="group relative flex items-center justify-between border-b-[1px] border-neutral-500 py-4 transition-colors duration-500 hover:border-neutral-300"
 		>
 			<div
 			>

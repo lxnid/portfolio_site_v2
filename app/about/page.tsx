@@ -4,11 +4,12 @@ import Image from "next/image";
 import Link from "next/link";
 import LinkAnimate from "../components/util/LinkAnimate";
 import { Alumni_Sans, Poppins } from "next/font/google";
-import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa6";
+import { FaGithub, FaInstagram, FaLinkedin, FaStar } from "react-icons/fa6";
 import FramerMagnetic from "../components/util/framerMagnetic";
 import { motion } from "framer-motion";
 import { TextGenerateEffect } from "../components/util/TextGenerateEffect";
 import FixedBackground from "../components/util/FixedBackground";
+import MarqueeWithReveal from "../components/Testimonials/Testimonials";
 
 const AlumniSans = Alumni_Sans({
 	subsets: ["latin"],
@@ -81,11 +82,11 @@ export default function About() {
 			className="w-full h-full min-h-screen"
 			transition={{ duration: 1.5, ease: "easeInOut" }}
 		>
-			<main className="w-full">
+			<main className="w-full snap-y snap-mandatory h-screen overflow-y-scroll scroll-smooth">
 				<FixedBackground color={backgroundColor} />
 				<section
 					id="secBgBlack"
-					className="w-full min-h-[100vh] h-auto flex flex-col-reverse lg:flex-row py-24 lg:py-0 justify-center items-center gap-10"
+					className="snap-start w-full min-h-[100vh] h-auto flex flex-col-reverse lg:flex-row py-24 lg:py-0 justify-center items-center gap-10"
 				>
 					<motion.div
 						initial={{ x: 48, opacity: 0 }}
@@ -167,7 +168,7 @@ export default function About() {
 				</section>
 				<section
 					id="secBgBlack"
-					className="w-full min-h-screen h-fit lg:h-screen flex justify-center items-center p-[8%]"
+					className="snap-start w-full min-h-screen h-fit lg:h-screen flex justify-center items-center p-[8%]"
 				>
 					<div className="w-auto h-auto gap-32 lg:gap-4 px-0 sm:px-16 lg:px-0">
 						<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-0 mb-20 lg:mb-0">
@@ -290,8 +291,8 @@ export default function About() {
 					</div>
 				</section>
 				<section
-					id="secBgWhite"
-					className="w-full min-h-screen flex justify-center items-center"
+					id="secBgBlack"
+					className="snap-start relative w-full min-h-screen flex justify-center items-center"
 				>
 					<div className="w-full flex flex-col justify-center items-center gap-40 sm:gap-0">
 						<motion.div
@@ -322,7 +323,7 @@ export default function About() {
 					<div className="absolute w-[86%] md:w-[70%] lg:w-[60%] space-y-5 md:text-xl lg:text-2xl opacity-70 font-normal text-justify">
 						<motion.p
 							initial={{ opacity: 0 }}
-							whileInView={{ opacity: 0.99 }}
+							whileInView={{ opacity: 0.9 }}
 							transition={{ ease: "easeInOut", duration: 1.5 }}
 							className=""
 						>
@@ -342,7 +343,7 @@ export default function About() {
 						</motion.p>
 						<motion.p
 							initial={{ opacity: 0 }}
-							whileInView={{ opacity: 0.99 }}
+							whileInView={{ opacity: 0.9 }}
 							transition={{ ease: "easeInOut", duration: 1.5 }}
 							className=""
 						>
@@ -359,8 +360,8 @@ export default function About() {
 					</div>
 				</section>
 				<section
-					id="secBgWhite"
-					className="w-full min-h-screen flex justify-center items-center my-36 sm:my-0"
+					id="secBgBlack"
+					className="snap-start relative w-full min-h-screen flex justify-center items-center my-36 sm:my-0"
 				>
 					<div className="w-full flex flex-col justify-center items-center gap-40 sm:gap-0">
 						<motion.div
@@ -394,7 +395,7 @@ export default function About() {
 								heading="Javascript"
 								subheading=""
 								imgSrc="https://img.icons8.com/color/240/javascript.png"
-								classNameHead=""
+								classNameHead=" text-4xl "
 								classNameSub=""
 								AnimDelay={0.2}
 								classNameImgSize={"h-20 w-20"}
@@ -402,8 +403,8 @@ export default function About() {
 							<LinkAnimate
 								heading="HTML / CSS"
 								subheading=""
-								imgSrc="https://img.icons8.com/ios-filled/240/html-5.png"
-								classNameHead=""
+								imgSrc="https://img.icons8.com/color/240/html-5.png"
+								classNameHead=" text-4xl "
 								classNameSub=""
 								AnimDelay={0.2}
 								classNameImgSize={"h-20 w-20"}
@@ -412,7 +413,7 @@ export default function About() {
 								heading="Python"
 								subheading=""
 								imgSrc="https://img.icons8.com/color/240/python.png"
-								classNameHead=""
+								classNameHead=" text-4xl "
 								classNameSub=""
 								AnimDelay={0.2}
 								classNameImgSize={"h-20 w-20"}
@@ -421,7 +422,7 @@ export default function About() {
 								heading="Next-JS"
 								subheading=""
 								imgSrc="https://img.icons8.com/color/240/nextjs.png"
-								classNameHead=""
+								classNameHead=" text-4xl "
 								classNameSub=""
 								AnimDelay={0.2}
 								classNameImgSize={"h-20 w-20"}
@@ -430,7 +431,7 @@ export default function About() {
 								heading="React-JS"
 								subheading=""
 								imgSrc="https://img.icons8.com/color/240/react-native.png"
-								classNameHead=""
+								classNameHead=" text-4xl "
 								classNameSub=""
 								AnimDelay={0.2}
 								classNameImgSize={"h-20 w-20"}
@@ -441,7 +442,7 @@ export default function About() {
 								heading="Tailwind-CSS"
 								subheading=""
 								imgSrc="https://img.icons8.com/fluency/240/tailwind_css.png"
-								classNameHead=""
+								classNameHead=" text-4xl "
 								classNameSub=""
 								AnimDelay={0.2}
 								classNameImgSize={"h-20 w-20"}
@@ -450,7 +451,7 @@ export default function About() {
 								heading="Github"
 								subheading=""
 								imgSrc="https://img.icons8.com/color/240/github.png"
-								classNameHead=""
+								classNameHead=" text-4xl "
 								classNameSub=""
 								AnimDelay={0.2}
 								classNameImgSize={"h-20 w-20"}
@@ -459,7 +460,7 @@ export default function About() {
 								heading="Linux"
 								subheading=""
 								imgSrc="https://img.icons8.com/color/240/linux.png"
-								classNameHead=""
+								classNameHead=" text-4xl "
 								classNameSub=""
 								AnimDelay={0.2}
 								classNameImgSize={"h-20 w-20"}
@@ -468,7 +469,7 @@ export default function About() {
 								heading="Figma"
 								subheading=""
 								imgSrc="https://img.icons8.com/color/240/figma.png"
-								classNameHead=""
+								classNameHead=" text-4xl "
 								classNameSub=""
 								AnimDelay={0.2}
 								classNameImgSize={"h-20 w-20"}
@@ -477,12 +478,30 @@ export default function About() {
 								heading="Adobe CC"
 								subheading=""
 								imgSrc="https://img.icons8.com/fluency/240/adobe-creative-cloud.png"
-								classNameHead=""
+								classNameHead=" text-4xl "
 								classNameSub=""
 								AnimDelay={0.2}
 								classNameImgSize={"h-20 w-20"}
 							/>
 						</div>
+					</div>
+				</section>
+				<section
+					id="secBgBlack"
+					className="snap-start relative w-full min-h-screen flex flex-col justify-center items-center my-36 sm:my-0 gap-28"
+				>
+					<motion.h1
+						initial={{ y: 48, opacity: 0 }}
+						whileInView={{ y: 0, opacity: 0.99 }}
+						transition={{ ease: "easeInOut", duration: 1.2 }}
+						className="text-5xl font-dahlia"
+					>
+						What People Say About Me
+					</motion.h1>
+					<div className="w-[80%] h-80 relative">
+						<div className="w-full h-full absolute z-10 bg-gradient-to-l from-black to-transparent to-20%"></div>
+						<div className="w-full h-full absolute z-10 bg-gradient-to-r from-black to-transparent to-20%"></div>
+						<MarqueeWithReveal />
 					</div>
 				</section>
 			</main>

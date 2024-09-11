@@ -3,10 +3,10 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'dahlia';
-  src: url('../public/fonts/dahlia-medium.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
+	font-family: "dahlia";
+	src: url("../public/fonts/dahlia-medium.otf") format("opentype");
+	font-weight: normal;
+	font-style: normal;
 }
 
 * {
@@ -16,8 +16,8 @@
 }
 html {
 	box-sizing: border-box;
-    font-size: 100%;
-    overflow-x: hidden;
+	font-size: 100%;
+	overflow-x: hidden;
 }
 
 *,
@@ -27,24 +27,24 @@ html {
 }
 
 body {
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale; 
-    color: #ffffff;
-    background-color: #000000;
-    margin: 0;
-    padding: 0;
-    font-size: 1rem;
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	color: #ffffff;
+	background-color: #000000;
+	margin: 0;
+	padding: 0;
+	font-size: 1rem;
 }
 
 main {
-    transition-property: opacity, transform, filter, background;
-    transition-timing-function: ease-in-out;
-    transition-duration: 1500ms;
-  }
-  
-  .page-transition {
-    opacity: 0;
-    transform: translateY(40px);
-    filter: blur(120px);
-  }
+	transition-property: opacity, transform, filter, background;
+	transition-timing-function: ease-in-out;
+	transition-duration: 1500ms;
+}
+
+.page-transition {
+	opacity: 0;
+	transform: translateY(40px);
+	filter: blur(120px);
+}

@@ -9,7 +9,7 @@ export const HoverImageLinks = () => {
 				heading="Home"
 				subheading="01/"
 				imgSrc="https://images.unsplash.com/photo-1623479322729-28b25c16b011?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-				href="#"
+				href="/"
 				AnimDelay={0.2}
 				classNameSub={
 					"text-base group-hover:text-neutral-200 text-neutral-500"
@@ -23,7 +23,7 @@ export const HoverImageLinks = () => {
 				heading="About"
 				subheading="02/"
 				imgSrc="https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-				href="#"
+				href="/about"
 				AnimDelay={0.4}
 				classNameSub={
 					"text-base group-hover:text-neutral-200 text-neutral-500"
@@ -37,7 +37,7 @@ export const HoverImageLinks = () => {
 				heading="Work"
 				subheading="03/"
 				imgSrc="https://images.unsplash.com/photo-1535223289827-42f1e9919769?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-				href="#"
+				href="/work"
 				AnimDelay={0.6}
 				classNameSub={
 					"text-base group-hover:text-neutral-200 text-neutral-500"
@@ -51,7 +51,7 @@ export const HoverImageLinks = () => {
 				heading="Contact"
 				subheading="04/"
 				imgSrc="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-				href="#"
+				href="/contact"
 				AnimDelay={0.8}
 				classNameSub={
 					"text-base group-hover:text-neutral-200 text-neutral-500"
