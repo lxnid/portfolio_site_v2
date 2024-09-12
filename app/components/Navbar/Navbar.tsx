@@ -21,14 +21,14 @@ const Navbar = () => {
 						<h1>archived</h1>
 						<span className="w-1 h-1 bg-white rounded-full"></span>
 						<Link
-							href={""}
+							href={"https://lxnid.github.io/portfolio/"}
 							className="opacity-50 hover:opacity-100 transition duration-300 ease-in"
 						>
 							2020 portfolio
 						</Link>
 						<span className="w-1 h-1 bg-white rounded-full"></span>
 						<Link
-							href={""}
+							href={"https://lxnid.github.io/portfolio_site/"}
 							className="opacity-50 hover:opacity-100 transition duration-300 ease-in"
 						>
 							2023 portfolio
@@ -36,19 +36,19 @@ const Navbar = () => {
 					</div>
 					<div className="flex gap-8 justify-center">
 						<Link
-							href={""}
+							href={"https://github.com/lxnid"}
 							className="opacity-50 hover:opacity-100 transition duration-200 ease-in"
 						>
 							<FaGithub className="text-2xl" />
 						</Link>
 						<Link
-							href={""}
+							href={"https://www.instagram.com/linid.hr/"}
 							className="opacity-50 hover:opacity-100 transition duration-200 ease-in"
 						>
 							<FaInstagram className="text-2xl" />
 						</Link>
 						<Link
-							href={""}
+							href={"https://www.linkedin.com/in/hirusha-rubasinghe-66bbba313"}
 							className="opacity-50 hover:opacity-100 transition duration-200 ease-in"
 						>
 							<FaLinkedin className="text-2xl" />

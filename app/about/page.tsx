@@ -4,12 +4,18 @@ import Image from "next/image";
 import Link from "next/link";
 import LinkAnimate from "../components/util/LinkAnimate";
 import { Alumni_Sans, Poppins } from "next/font/google";
-import { FaGithub, FaInstagram, FaLinkedin, FaStar } from "react-icons/fa6";
+import {
+	FaArrowUpRightFromSquare,
+	FaGithub,
+	FaInstagram,
+	FaLinkedin,
+	FaStar,
+} from "react-icons/fa6";
 import FramerMagnetic from "../components/util/framerMagnetic";
 import { motion } from "framer-motion";
 import { TextGenerateEffect } from "../components/util/TextGenerateEffect";
 import FixedBackground from "../components/util/FixedBackground";
-import MarqueeWithReveal from "../components/Testimonials/Testimonials";
+import MarqueeWithReveal from "./components/Testimonials/Testimonials";
 
 const AlumniSans = Alumni_Sans({
 	subsets: ["latin"],
@@ -86,7 +92,7 @@ export default function About() {
 				<FixedBackground color={backgroundColor} />
 				<section
 					id="secBgBlack"
-					className="snap-start w-full min-h-[100vh] h-auto flex flex-col-reverse lg:flex-row py-24 lg:py-0 justify-center items-center gap-10"
+					className="snap-start w-full min-h-[110vh] h-auto flex flex-col-reverse lg:flex-row py-24 lg:py-0 justify-center items-center gap-10"
 				>
 					<motion.div
 						initial={{ x: 48, opacity: 0 }}
@@ -148,7 +154,7 @@ export default function About() {
 					>
 						<FramerMagnetic>
 							<Image
-								src={"profile-img.jpg"}
+								src={"/profile-img.jpg"}
 								alt={""}
 								width={1}
 								height={1}
@@ -157,7 +163,7 @@ export default function About() {
 							/>
 						</FramerMagnetic>
 						<Image
-							src={"profile-img.jpg"}
+							src={"/profile-img.jpg"}
 							alt={""}
 							width={1}
 							height={1}
@@ -168,7 +174,7 @@ export default function About() {
 				</section>
 				<section
 					id="secBgBlack"
-					className="snap-start w-full min-h-screen h-fit lg:h-screen flex justify-center items-center p-[8%]"
+					className="snap-start w-full min-h-[100vh] h-fit lg:h-screen flex justify-center items-center p-[8%]"
 				>
 					<div className="w-auto h-auto gap-32 lg:gap-4 px-0 sm:px-16 lg:px-0">
 						<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-0 mb-20 lg:mb-0">
@@ -180,7 +186,7 @@ export default function About() {
 							>
 								<FramerMagnetic className="w-full">
 									<Image
-										src={"gradient-purple.jpg"}
+										src={"/gradient-purple.jpg"}
 										width={1000}
 										height={1000}
 										alt={""}
@@ -276,9 +282,14 @@ export default function About() {
 							>
 								<FramerMagnetic>
 									<div className="overflow-hidden rounded-[6rem] cursor-pointer hover:scale-105 transition ease-out duration-300">
-										<Link href={""}>
+										<Link
+											href={
+												"https://open.spotify.com/playlist/6JwPDiKlQL79PxO9Lg6JKU?si=3824dc245e804f35"
+											}
+											target="blank"
+										>
 											<Image
-												src={"spotify-badge.jpg"}
+												src={"/spotify-badge.jpg"}
 												width={1000}
 												height={1000}
 												alt={""}
@@ -485,8 +496,14 @@ export default function About() {
 							/>
 						</div>
 					</div>
+					<motion.h1 className="font-dahlia opacity-25 absolute translate-y-96">
+						<Link href={"/work"}>
+							See My Work
+							<FaArrowUpRightFromSquare className="inline ml-2" />
+						</Link>
+					</motion.h1>
 				</section>
-				<section
+				{/* <section
 					id="secBgBlack"
 					className="snap-start relative w-full min-h-screen flex flex-col justify-center items-center my-36 sm:my-0 gap-28"
 				>
@@ -503,7 +520,13 @@ export default function About() {
 						<div className="w-full h-full absolute z-10 bg-gradient-to-r from-black to-transparent to-20%"></div>
 						<MarqueeWithReveal />
 					</div>
-				</section>
+					<motion.h1 className="font-dahlia opacity-45">
+						<Link href={"/work"}>
+							See My Work
+							<FaArrowUpRightFromSquare className="inline ml-2" />
+						</Link>
+					</motion.h1>
+				</section> */}
 			</main>
 		</motion.div>
 	);

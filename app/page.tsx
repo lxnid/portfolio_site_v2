@@ -80,7 +80,7 @@ export default function Home() {
 					>
 						<FramerMagnetic className={undefined}>
 							<TransitionLink
-								href={""}
+								href={"/work"}
 								className="text-[rgb(53,53,53)] hover:text-[rgb(80,80,80)] transition duration-200 ease-in"
 							>
 								Work

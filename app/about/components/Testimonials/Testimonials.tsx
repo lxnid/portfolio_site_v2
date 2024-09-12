@@ -6,21 +6,21 @@ import { FaStar } from "react-icons/fa";
 const testimonials = [
 	{
 		rating: 5,
-		text: "It was the best of times, it was the worst of times...",
-        name: "Charles Leclerc",
-		description: "something",
+		text: "",
+        name: "",
+		description: "",
 	},
 	{
 		rating: 4.5,
-		text: "It was the season of Light, it was the season of Darkness...",
-		name: "Max Verstappen",
-		description: "another thing",
+		text: "",
+		name: "",
+		description: "",
 	},
 	{
 		rating: 4.5,
-		text: "It was the epoch of belief, it was the epoch of incredulity...",
-		name: "Lewis Hamilton",
-		description: "yet another thing",
+		text: "",
+		name: "",
+		description: "",
 	},
 ];
 

@@ -28,7 +28,9 @@ export default function RootLayout({
 	return (
 		<html lang="en" className="bg-black">
 			<body className={`${fontPop.className} `}>
-				<div className="w-full flex justify-center items-center h-10 fixed top-10 bg-slate-500">STILL UNDER CONSTRUCTION. DONT MIND THE DETAILS</div>
+				{/* <div className="w-full flex justify-center items-center h-10 fixed top-10 bg-slate-500">
+					STILL UNDER CONSTRUCTION. DONT MIND THE DETAILS
+				</div> */}
 				<div className="drawer drawer-end overflow-hidden">
 					<input
 						id="my-drawer-4"
@@ -41,16 +43,16 @@ export default function RootLayout({
 							{/* Left side: Logo */}
 							<div className="flex-1">
 								<FramerMagnetic className={""}>
-								<TransitionLink className={""} href={"/"}>
-									<Image
-										src={"logo.svg"}
-										alt={"logo"}
-										width={56}
-										height={56}
-										className="h-auto"
-										priority={true}
+									<TransitionLink className={""} href={"/"}>
+										<Image
+											src={"logo.svg"}
+											alt={"logo"}
+											width={56}
+											height={56}
+											className="h-auto"
+											priority={true}
 										/>
-										</TransitionLink>
+									</TransitionLink>
 								</FramerMagnetic>
 							</div>
 
