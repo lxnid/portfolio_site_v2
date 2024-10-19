@@ -88,7 +88,7 @@ export default function About() {
 			className="w-full h-full min-h-screen"
 			transition={{ duration: 1.5, ease: "easeInOut" }}
 		>
-			<main className="w-full h-screen overflow-y-scroll scroll-smooth">
+			<main className="w-full scroll-smooth">
 				<FixedBackground color={backgroundColor} />
 				<section
 					id="secBgBlack"
