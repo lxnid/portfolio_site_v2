@@ -89,7 +89,7 @@ export default function Home() {
 					</motion.div>
 				</div>
 				<div className="w-full h-full flex justify-center items-center">
-					<div className="w-[75%] lg:w-[50%] xl:w-[30%] text-center text-[25px] sm:text-[32px] tracking-wider">
+					<div className="w-[75%] lg:w-[50%] xl:w-[30%] text-center text-[20px] sm:text-[30px] tracking-wider">
 						<motion.p
 							initial={{ y: 48, opacity: 0 }}
 							whileInView={{ y: 0, opacity: 0.99 }}
