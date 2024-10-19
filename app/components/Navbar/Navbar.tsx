@@ -9,15 +9,15 @@ const Navbar = () => {
 	return (
 		<div className="absolute menu bg-none text-base-content h-screen overflow-hidden min-h-[90vh] pt-36 w-full p-4 backdrop-blur-3xl">
 			<HoverImageLinks />
-			<div className="mx-[1%] sm:mx-[10%] mt-[2%] bottom-40 md:bottom-auto absolute md:relative md:h-16 flex justify-center items-center">
+			<div className="mx-[1%] sm:mx-[10%] mt-[2%] bottom-10 absolute w-[80%] flex justify-center items-center">
 				<motion.div
 					initial={{ y: 48, opacity: 0 }}
 					whileInView={{ y: 0, opacity: 0.99 }}
 					transition={{ ease: "easeInOut", duration: 0.75, delay: 1 }}
 					viewport={{ amount: 0 }}
-					className="w-full flex flex-col md:flex-row space-y-5 md:space-y-0"
+					className="w-full flex flex-col md:flex-row space-y-5"
 				>
-					<div className="md:flex-grow flex gap-8 items-center uppercase font-dahlia text-sm md:text-xl tracking-widest">
+					<div className="flex flex-grow gap-8 items-center uppercase font-dahlia text-sm md:text-xl tracking-widest">
 						<h1>archived</h1>
 						<span className="w-1 h-1 bg-white rounded-full"></span>
 						<Link
