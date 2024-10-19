@@ -11,10 +11,10 @@ const fontParisienne = Parisienne({
 	subsets: ["latin"],
 	weight: "400",
 });
-// snap-y snap-mandatory 
+
 export default function Home() {
 	return (
-		<main className="w-full h-screen overflow-y-scroll">
+		<main className="w-full snap-y snap-mandatory h-screen overflow-y-scroll">
 			<section className="sm:pt-0 w-full flex justify-center items-center min-h-[100vh] snap-start relative">
 				<motion.video
 					initial={{ opacity: 0 }}
