@@ -15,7 +15,7 @@ export default function Home() {
 				<WorkEntry
 					title="Portfolio"
 					description="Personal portfolio Website deveolped using NextJS and FramerMotion showcasing my skills and projects"
-					coverImage="/project-img-1.png"
+					coverImage="project-img-1.png"
 				/>
 			</section>
 			<section id="project-2" className="h-screen snap-start"></section>
