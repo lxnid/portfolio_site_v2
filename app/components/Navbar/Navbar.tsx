@@ -48,10 +48,19 @@ const Navbar = () => {
 							<FaInstagram className="text-2xl" />
 						</Link>
 						<Link
-							href={"https://www.linkedin.com/in/hirusha-rubasinghe-66bbba313"}
+							href={
+								"https://www.linkedin.com/in/hirusha-rubasinghe-66bbba313"
+							}
 							className="opacity-50 hover:opacity-100 transition duration-200 ease-in"
 						>
 							<FaLinkedin className="text-2xl" />
+						</Link>
+						<Link
+							href={"CV.pdf"}
+							download={"CV.pdf"}
+							className="btn bg-white hover:bg-opacity-80 text-black hover:text-gray-300 transition duration-500 ease-in-out py-2 px-4 rounded-full"
+						>
+							School Resume
 						</Link>
 					</div>
 				</motion.div>
