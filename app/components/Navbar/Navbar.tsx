@@ -15,7 +15,7 @@ const Navbar = () => {
 					whileInView={{ y: 0, opacity: 0.99 }}
 					transition={{ ease: "easeInOut", duration: 0.75, delay: 1 }}
 					viewport={{ amount: 0 }}
-					className="w-full flex flex-col md:flex-row space-y-5"
+					className="w-full flex flex-col md:flex-row space-y-5 md:space-y-0 h-auto"
 				>
 					<div className="flex flex-grow gap-8 items-center uppercase font-dahlia text-sm md:text-xl tracking-widest">
 						<h1>archived</h1>
@@ -34,7 +34,7 @@ const Navbar = () => {
 							2023 portfolio
 						</Link>
 					</div>
-					<div className="flex gap-8 justify-center">
+					<div className="flex gap-8 items-center">
 						<Link
 							href={"https://github.com/lxnid"}
 							className="opacity-50 hover:opacity-100 transition duration-200 ease-in"

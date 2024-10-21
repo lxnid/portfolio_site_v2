@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
 const NavbarWithProgress = () => {
 	const [gliderPosition, setGliderPosition] = useState(0);
-	const totalSections = 2; // Change this to the number of sections you have
+	const totalSections = 2; // Change the number of sections
 
 	useEffect(() => {
 		const handleScroll = () => {
@@ -52,7 +52,7 @@ const NavbarWithProgress = () => {
             </div>
             <div className="flex flex-col relative h-auto gap-24 translate-y-80">
                 <Link href={"#project-1"} className="font-bold tracking-widest text-xs -rotate-90 hover:opacity-45 transition-opacity ease-in duration-100">Portfolio</Link>
-                <Link href={"#project-2"} className="font-bold tracking-widest text-xs -rotate-90 hover:opacity-45 transition-opacity ease-in duration-100">Melodine</Link>
+                <Link href={"#project-2"} className="font-bold tracking-widest text-xs -rotate-90 opacity-45 transition-opacity ease-in duration-100">Melodine</Link>
             </div>
 		</motion.nav>
 	);

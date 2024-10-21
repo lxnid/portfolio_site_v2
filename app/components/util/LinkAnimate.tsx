@@ -118,7 +118,6 @@ const LinkAnimate: React.FC<LinkProps> = ({ heading, imgSrc, subheading, href, A
 				transition={{ type: "spring" }}
 				src={imgSrc}
 				className={`${classNameImgSize} absolute z-0 rounded-lg object-cover`}
-				alt={`Image representing a link for ${heading}`}
 			/>
 
 			<motion.div
