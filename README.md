@@ -18,7 +18,7 @@ You can view the live demo of the portfolio website [here](http://lxnid.github.i
 ## Technologies Used
 
 - HTML5 and CSS3
-- JavaScript
+- JavaScript/Typescript
 - React.js/Next.js
 - Tailwind CSS
 - Font Awesome
