@@ -21,14 +21,21 @@ const Navbar = () => {
 						<h1>archived</h1>
 						<span className="w-1 h-1 bg-white rounded-full"></span>
 						<Link
-							href={"https://lxnid.github.io/portfolio/"}
+							href={"https://lxnid.github.io/portfolio_2023_v1/"}
 							className="opacity-50 hover:opacity-100 transition duration-300 ease-in"
 						>
 							2020 portfolio
 						</Link>
 						<span className="w-1 h-1 bg-white rounded-full"></span>
 						<Link
-							href={"https://lxnid.github.io/portfolio_site/"}
+							href={"https://lxnid.github.io/portfolio_2022_demo/"}
+							className="opacity-50 hover:opacity-100 transition duration-300 ease-in"
+						>
+							2022 portfolio
+						</Link>
+						<span className="w-1 h-1 bg-white rounded-full"></span>
+						<Link
+							href={"https://lxnid.github.io/portfolio_2024_v1/"}
 							className="opacity-50 hover:opacity-100 transition duration-300 ease-in"
 						>
 							2023 portfolio
