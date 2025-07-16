@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import Image from "next/image";
-import Link from "next/link"
+import Link from "next/link";
 import "@/app/style.css";
 import Navbar from "./components/Navbar/Navbar";
 import FramerMagnetic from "@/app/components/util/framerMagnetic";
@@ -57,6 +57,18 @@ export default function RootLayout({
 								</FramerMagnetic>
 							</div>
 
+							<div className="w-full px-28 h-0 text-[#dddddd] text-xs md:text-sm fixed top-12 md:top-8 flex justify-center items-center gap-2">
+								<p>
+									This site is obselete. Checkout my new site &nbsp;
+									<Link
+										href="https://lxnid.github.io/me"
+										className="inline text-sky-500 cursor-pointer"
+									>
+										here
+									</Link>
+								</p>
+							</div>
+
 							{/* Right side: Menu button */}
 							<div className="flex-none">
 								<label
@@ -76,10 +88,6 @@ export default function RootLayout({
 								</label>
 							</div>
 						</nav>
-						<div className="w-full h-16 bg-black/70 backdrop-blur-sm text-[#dddddd] text-sm">
-							This site is obselete. Checkout my new site
-							<Link href="https://lxnid.github.com/me" className="inline text-sky-500">here</Link>
-						</div>
 						{children}
 					</div>
 
