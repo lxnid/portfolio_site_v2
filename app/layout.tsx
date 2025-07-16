@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import Image from "next/image";
+import Link from "next/link"
 import "@/app/style.css";
 import Navbar from "./components/Navbar/Navbar";
 import FramerMagnetic from "@/app/components/util/framerMagnetic";
@@ -75,7 +76,10 @@ export default function RootLayout({
 								</label>
 							</div>
 						</nav>
-
+						<div className="w-full h-16 bg-black/70 backdrop-blur-sm text-[#dddddd] text-sm">
+							This site is obselete. Checkout my new site
+							<Link href="https://lxnid.github.com/me" className="inline text-sky-500">here</Link>
+						</div>
 						{children}
 					</div>
 
